@@ -7,3 +7,10 @@
 
 //Don't forget to wrap your script in a callback so it runs when the document
 //has loaded.
+
+   //register an event callback
+   $('#toGreet').keyup(function() {
+       //when event occurs...
+       var name = $(this).val();
+       $('#enterHere').text("Hello " + name);
+   });
